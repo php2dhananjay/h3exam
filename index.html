@@ -1,72 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade 2 SA-2 Exam Portal | H3 World School</title>
-    <meta name="description" content="Official SA-2 Exam Schedule and Daily Study Plan for Grade 2 students.">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H3 Exam Portal Grade 2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="app-container">
-        <header class="main-header">
-            <div class="header-content">
-                <h1>H3 World School, Tragad</h1>
-                <p>SA-2 Final Exam Portal & Study Planner • Grade II</p>
-            </div>
-            <div class="header-actions">
-                <p class="current-date" id="currentDateDisplay"></p>
-            </div>
-        </header>
-
-        <main>
-            <nav class="tab-nav">
-                <button class="tab-btn active" data-tab="timetable">
-                    <span class="icon">📅</span> Exam Schedule
-                </button>
-                <button class="tab-btn" data-tab="study-plan">
-                    <span class="icon">📝</span> Daily Study Plan
-                </button>
-            </nav>
-
-            <section id="timetable" class="tab-content active">
-                <div class="schedule-card-container" id="examScheduleContainer">
-                    <!-- Populated by JS -->
-                </div>
-                <div class="notice-board">
-                    <h3>📢 Important Instructions</h3>
-                    <ul id="instructionsList">
-                        <!-- Populated by JS -->
-                    </ul>
-                </div>
-            </section>
-
-            <section id="study-plan" class="tab-content">
-                <div class="plan-header">
-                    <h2>Your Daily Success Roadmap</h2>
-                    <p>Designed for 40-50 minutes of focused study daily.</p>
-                </div>
-                
-                <div class="progress-container">
-                    <div class="progress-bar-bg">
-                        <div class="progress-fill" id="studyProgress" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text">Exam Readiness: <span id="progressPercent">0%</span></p>
-                </div>
-
-                <div class="study-timeline" id="studyTimeline">
-                    <!-- Populated by JS -->
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>Made with ❤️ for Student Success</p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
+
 </html>
